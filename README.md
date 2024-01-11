@@ -20,7 +20,7 @@
   - `Question` – VARCHAR – 200
   - `Option1`, `Option2`, `Option3`, `Option4` – VARCHAR – 200
   - `Correct_option` – VARCHAR – 200
-  - Click save.
+- Click save.
 
 ## 4. Insert Data
 
