@@ -65,9 +65,9 @@ echo json_encode($questions_array);
 
 ?>
 ```
+
 ## Now you can create more data and run the app
 
----
 
 **Note:**
 
