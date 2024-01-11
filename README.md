@@ -18,8 +18,8 @@
 - Create a new table (e.g., 'math_quiz' or 'science_quiz') with the following columns:
   - `Id` – INT – check on A_I (Auto Increment)
   - `Question` – VARCHAR – 200
-  - `Option1`, `Option2`, `Option3`, `Option4`
-  - `Correct_option`
+  - `Option1`, `Option2`, `Option3`, `Option4` – VARCHAR – 200
+  - `Correct_option` – VARCHAR – 200
   Click save.
 
 ## 4. Insert Data
@@ -29,7 +29,7 @@
 ## 5. Create PHP API
 
 - Navigate to `/your_xampp_folder/htdocs/` and create a new folder named 'quiz'.
-- In the 'quiz' folder, create a text document named 'question_api.php' and paste the following code:
+- In the 'quiz' folder, create a text document named 'question_api' and paste the following code:
 
 ```php
 <?php
@@ -65,6 +65,10 @@ echo json_encode($questions_array);
 
 ?>
 ```
+
+- Save this file as 'question_api.php'
+
+
 
 ## Now you can create more data and run the app
 
