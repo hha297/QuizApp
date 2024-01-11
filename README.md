@@ -38,6 +38,9 @@
 $connect = mysqli_connect("localhost", "root", "", "quiz_db");
 $stmt = $connect->prepare("SELECT `question`, `option1`, `option2`, `option3`, `option4`, `correct_option` FROM `math_quiz`");
 
+// If you have more than one table, update the $stmt: $stmt = $connect->prepare("SELECT `question`, `option1`, `option2`, `option3`, `option4`, `correct_option` FROM `math_quiz` UNION ALL SELECT `question`, `option1`, `option2`, `option3`, `option4`, `correct_option` FROM `other_quiz`");
+
+
 // Execute query
 $stmt->execute();
 
