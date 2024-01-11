@@ -13,7 +13,7 @@
 
 ## 3. Configure Database
 
-- Access [localhost/phpMyAdmin](http://localhost/phpMyAdmin).
+- Access [localhost/phpmyadmin](http://localhost/phpmyadmin).
 - Create a new database, name it 'quiz_db' (or a name of your choice).
 - Create a new table (e.g., 'math_quiz' or 'science_quiz') with the following columns:
   - `Id` – INT – check on A_I (Auto Increment)
