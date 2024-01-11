@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:background="#172c58"
+            tools:context=".view.MainActivity"
+            android:ellipsize="end"
+            >
+
+
+            <!-- Textview to display "Quizz App" -->
+
+            <!-- Textview to display "Ready for the challenge" -->
+
+            <!-- RadioGroup to group RadioButton options -->
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:fontFamily="monospace"
+                android:text="Quizz App"
+                android:textColor="#FFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="Ready for the challenge"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:alpha="0.8"/>
+
+            <TextView
+                android:id="@+id/textQuestion"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:fontFamily="monospace"
+                android:text="5 x 6"
+                android:textColor="#FFF"
+                android:textSize="32dp" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="24dp"
+
+
+
+
+                >
+
+
+                <!-- RadioButton for Option 1 -->
+
+                <!-- RadioButton for Option 2 -->
+                <RadioButton
+                    android:id="@+id/radioButtonOption1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text=""
+                    android:fontFamily="monospace"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:layout_margin="8dp"
+
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="monospace"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:layout_margin="8dp"
+
+                    android:buttonTint="@color/white"/>
+
+
+                <!-- RadioButton for Option 3 -->
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Blabla"
+
+                    android:fontFamily="monospace"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:layout_margin="8dp"
+
+                    android:buttonTint="@color/white"/>
+
+                <!-- RadioButton for Option 4 -->
+                <RadioButton
+                    android:id="@+id/radioButtonOption4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:fontFamily="monospace"
+                    android:textColor="#FFF"
+                    android:textSize="20sp"
+                    android:layout_margin="8dp"
+
+                    android:buttonTint="@color/white"/>
+
+            </RadioGroup>
+
+            <!-- Button for Next -->
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"
+                android:background="#0e85c5"
+                android:text="Next"
+                android:fontFamily="monospace"
+                android:textColor="#FFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="monospace"
+                android:text=""
+                android:textColor="#66fe85"
+                android:textSize="20dp"
+
+
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

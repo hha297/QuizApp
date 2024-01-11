@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textViewTitle" type="id" />
+    <item name="textViewSubtitle" type="id" />
+    <item name="textQuestion" type="id" />
+    <item name="textAnswer" type="id" />
+
+    <item name="radioButtonOption1" type="id" />
+    <item name="radioButtonOption2" type="id" />
+    <item name="radioButtonOption3" type="id" />
+    <item name="radioButtonOption4" type="id" />
+    <item name="buttonNext" type="id" />
+    <item name="buttonBack" type="id" />
+
+</resources>
