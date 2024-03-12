@@ -74,7 +74,9 @@ echo json_encode($questions_array);
 - Save this file as 'question_api.php'
 
 ## Made changes to RetrofitInstance file in retrofit folder
-- In the "val baseUrl = "http://192.168.0.2/quiz/" ", change the 192.168.0.2 by your current IPv4 by using CommandPrompt with "ipconfig"
+![image](https://github.com/hha297/QuizApp/assets/89086008/25c389cd-0ec7-4e3f-b1a8-ac7a98940589)
+
+- At the "val baseUrl = "http://192.168.0.2/quiz/" ", change the 192.168.0.2 by your current IPv4 by using CommandPrompt with "ipconfig"
 
 ## Now you can create more data and run the app
 
