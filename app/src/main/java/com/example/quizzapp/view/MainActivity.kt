@@ -1,5 +1,6 @@
 package com.example.quizzapp.view
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -15,6 +16,7 @@ import com.example.quizzapp.viewmodel.QuizViewModel
 import com.example.quizzapp.databinding.ActivityMainBinding
 import com.example.quizzapp.model.Question
 import com.example.quizzapp.model.QuestionsList
+import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -34,6 +36,8 @@ class MainActivity : ComponentActivity() {
         var totalQuestion = 0
     }
 
+
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
@@ -95,16 +99,16 @@ class MainActivity : ComponentActivity() {
 
 
                             //Check if it's last question
-                            if(i == it.size!!.minus(1)){
+                            if(i == it.size.minus(1)){
                                 buttonNext.text = "FINISH"
                             }
 
-                            radioGroupOptions?.clearCheck()
+                            radioGroupOptions.clearCheck()
                             i++
                         } else{
                             if (radbutton.text.toString().equals(it[i-1].correct_option)) {
                                 result++
-                                txtResult?.text= "Correct Answer: ${result}"
+                                txtResult.text = "Correct Answer: ${result}"
                             } else {
 
                             }
